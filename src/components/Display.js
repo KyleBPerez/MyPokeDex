@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { Fragment } from 'react';
-import './componentsCss/Display.css'
 import './componentsCss/PokemonType.css'
+import './componentsCss/Display.css'
 
 const capitalizeFirstLetter = word => word.replace(/^\w/g, capLetter => capLetter.toUpperCase());
 
@@ -40,7 +40,7 @@ function Display({ name, id, sprites, types, stats }) {
               stats.map((value, index) => {
                 return (
                   <Fragment key={index}>
-                    <span>{capitalizeFirstLetter(value.stat.name)}: <span>{value.base_stat}</span></span>
+                    <h5>{capitalizeFirstLetter(value.stat.name)}: <span>{value.base_stat}</span></h5>
                   </Fragment>
                 )
               })
@@ -48,15 +48,22 @@ function Display({ name, id, sprites, types, stats }) {
             {
               types.map(typeInfo => {
                 return (
-                  <span key={`${name}-${typeInfo.slot}`}>Type: <span className={typeInfo.type.name}>{capitalizeFirstLetter(typeInfo.type.name)}</span></span>
+                  <Fragment>
+                    <h5
+                      key={`${name}-${typeInfo.slot}`}
+                    >
+                      Type: <span className={typeInfo.type.name}>{capitalizeFirstLetter(typeInfo.type.name)}</span>
+                    </h5>
+                  </Fragment>
                 )
               })
             }
           </div>
         </div>
         <div className='info'>
-          <span>Id: <span>{id}</span></span>
-          <span>Name: <span>{capitalizeFirstLetter(name)}</span></span>
+          <h5>Id: <span>{id}</span></h5>
+          <h5>Name: </h5>
+          <h5 className={`${types[0].type.name} name-text`}>{capitalizeFirstLetter(name)}</h5>
         </div>
       </div>
     )
