@@ -21,7 +21,7 @@ span {
 .display {
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
+  row-gap: 15px;
   background-image: linear-gradient(
     to top left,
     rgba(60, 39, 246, 0.842),
@@ -46,6 +46,7 @@ span {
 .stats {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
 
 .info {

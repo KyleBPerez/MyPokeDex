@@ -1,6 +1,6 @@
 const URL = 'https://pokeapi.co/api/v2';
 
-export async function fetchAllPokemon() {
+export async function fetchFirstPokemon() {
   try {
     const response = await fetch(`${URL}/pokemon/1`,
       {

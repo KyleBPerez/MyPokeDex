@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Display from './Display';
 import Buttons from './Buttons';
-import { fetchAllPokemon, fetchNextOrPreviousPokemon } from './api/api';
+import { fetchFirstPokemon, fetchNextOrPreviousPokemon } from './api/api';
 import SearchFeild from './SearchFeild';
 
 
@@ -9,9 +9,9 @@ function PokeDexLower() {
   const [pokemon, setPokemon] = useState([]);
 
   useEffect(() => {
-    Promise.all([fetchAllPokemon()])
+    Promise.all([fetchFirstPokemon()])
       .then(([firstPoke]) => setPokemon(firstPoke))
-      .catch(error => console.error(error, `ya fucked it`))
+      .catch(error => console.error(error, `useEffect didn't work`))
   }, [])
 
   async function nextPokemon(currentId) {

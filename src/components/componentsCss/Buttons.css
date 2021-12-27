@@ -11,53 +11,55 @@
 }
 
 .button-shoulder-left {
-  padding: 0 2px 2px 0;
+  padding: 0 2px 3px 0;
   background-color: #b4a497;
   border-radius: 15px;
   border: 1px solid black;
 }
 
 .button-shoulder-left:active {
+  padding: 3px;
   border: 1px solid black;
-  padding: 2px;
-}
-
-.button-depth-left {
-  padding: 1px;
-  background-color: #29aafd;
-  border-radius: 15px;
-  border: 1px solid black;
-}
-
-.button-depth-left:active {
-  border-radius: 16px;
-  padding: 0;
-  background-color: #29aafd;
 }
 
 .button-shoulder-right {
-  padding: 0 0 2px 2px;
+  padding: 0 0 3px 3px;
   background-color: #b4a497;
   border-radius: 15px;
   border: 1px solid black;
 }
 
 .button-shoulder-right:active {
+  padding: 3px;
   border: 1px solid black;
-  padding: 2px;
+}
+
+.button-depth-left {
+  padding: 0 0 3px;
+  background-color: #29aafd;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.button-depth-left:active {
+  border-radius: 15px;
+  border: none;
+  padding: 0;
+  background-color: #29aafd;
 }
 
 .button-depth-right {
-  padding: 1px;
+  padding: 0 0 3px;
   background-color: #29aafd;
   border-radius: 15px;
   border: 1px solid black;
 }
 
 .button-depth-right:active {
-  border-radius: 16px;
+  border-radius: 15px;
+  border: none;
   padding: 0;
-  background-color: #29aafd;
+  background-color: #b4a497;
 }
 
 .next-poke {
@@ -66,6 +68,7 @@
   background-color: #29aafd;
   border-radius: 15px;
   box-shadow: 1px 1px 10px black;
+  border: none;
   height: 40px;
   width: 100px;
 }
@@ -76,6 +79,7 @@
   background-color: #29aafd;
   border-radius: 15px;
   box-shadow: 1px 1px 10px black;
+  border: none;
   height: 40px;
   width: 100px;
 }
@@ -83,5 +87,6 @@
 .next-poke:active,
 .last-poke:active,
 .search-button:active {
-  box-shadow: inset 1px 1px 5px black;
+  box-shadow: inset 1px 1px 3px black;
+  border-bottom: 1px solid black;
 }
