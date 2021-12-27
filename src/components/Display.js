@@ -9,34 +9,43 @@ function Display({ name, id, sprites, types, stats }) {
 
   return (
     !id ?
-      <div className="display">
-        <h1>Only have Data for the first 151 pokemeon!!</h1>
+      <div className="display-no-data">
+        <h4 className='no-data'>Only contains data <br /> for the first <br /> 151 Pokemon!!</h4>
+        <div className="no-data-img">
+          <img className='shocked-CHU' src="https://image.emojipng.com/561/1389561.png" alt="shocked pikachu" />
+          <img className='shocked-CHU' src="https://image.emojipng.com/561/1389561.png" alt="shocked pikachu" />
+          <img className='shocked-CHU' src="https://image.emojipng.com/561/1389561.png" alt="shocked pikachu" />
+        </div>
       </div>
       :
       <div className='display'>
-        <div className="sprite">
-          <img src={sprites.front_default} alt={`picture of ${name}`} /></div>
+        <div className="specs">
+          <div className="sprite">
+            <img src={sprites.front_default} alt={`picture of ${name}`} />
+          </div>
+          <div className="stats">
+            {
+              stats.map((value, index) => {
+                return (
+                  <Fragment key={index}>
+                    <span>{capitalizeFirstLetter(value.stat.name)}: <span>{value.base_stat}</span></span>
+                  </Fragment>
+                )
+              })
+            }
+            {
+              types.map(typeInfo => {
+                return (
+                  <span key={`${name}-${typeInfo.slot}`}>Type: <span className={typeInfo.type.name}>{capitalizeFirstLetter(typeInfo.type.name)}</span></span>
+                )
+              })
+            }
+          </div>
+        </div>
         <div className='info'>
           <span>Id: <span>{id}</span></span>
           <span>Name: <span>{capitalizeFirstLetter(name)}</span></span>
-          {
-            stats.map((value, index) => {
-              return (
-                <Fragment key={index}>
-                  <span>{capitalizeFirstLetter(value.stat.name)}: <span>{value.base_stat}</span></span>
-                </Fragment>
-              )
-            })
-          }
-          {
-            types.map(typeInfo => {
-              return (
-                <span key={`${name}-${typeInfo.slot}`}>Type: <span className={typeInfo.type.name}>{capitalizeFirstLetter(typeInfo.type.name)}</span></span>
-              )
-            })
-          }
         </div>
-
       </div>
   )
 }

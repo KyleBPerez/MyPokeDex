@@ -1,4 +1,4 @@
-.buttons {
+.buttons-space {
   display: flex;
   justify-content: space-between;
   width: 80%;
@@ -10,26 +10,78 @@
   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+.button-shoulder-left {
+  padding: 0 2px 2px 0;
+  background-color: #b4a497;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.button-shoulder-left:active {
+  border: 1px solid black;
+  padding: 2px;
+}
+
+.button-depth-left {
+  padding: 1px;
+  background-color: #29aafd;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.button-depth-left:active {
+  border-radius: 16px;
+  padding: 0;
+  background-color: #29aafd;
+}
+
+.button-shoulder-right {
+  padding: 0 0 2px 2px;
+  background-color: #b4a497;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.button-shoulder-right:active {
+  border: 1px solid black;
+  padding: 2px;
+}
+
+.button-depth-right {
+  padding: 1px;
+  background-color: #29aafd;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.button-depth-right:active {
+  border-radius: 16px;
+  padding: 0;
+  background-color: #29aafd;
+}
+
 .next-poke {
   color: white;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
   background-color: #29aafd;
   border-radius: 15px;
-  border: 2px solid black;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.712);
+  box-shadow: 1px 1px 10px black;
   height: 40px;
   width: 100px;
-  margin-left: 10px;
 }
 
 .last-poke {
   color: white;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
   background-color: #29aafd;
-  border: 2px solid black;
   border-radius: 15px;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.733);
+  box-shadow: 1px 1px 10px black;
   height: 40px;
   width: 100px;
-  margin-left: 10px;
+}
+
+.next-poke:active,
+.last-poke:active,
+.search-button:active {
+  box-shadow: inset 1px 1px 5px black;
 }

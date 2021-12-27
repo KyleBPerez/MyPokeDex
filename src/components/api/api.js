@@ -10,7 +10,7 @@ export async function fetchAllPokemon() {
 
     return data;
   } catch (error) {
-    console.error(error, 'goofBall')
+    console.error(error, 'error in fetchAllPokemon')
   }
 }
 
@@ -28,7 +28,7 @@ export async function fetchNextOrPreviousPokemon(newId) {
 
     return data;
   } catch (error) {
-    console.error(error, `ya done fucked up`)
+    console.error(error, `error in fetchNextOrPreviousPokemeon`)
   }
 }
 
@@ -38,6 +38,6 @@ export async function fetchSpecificPokemon(pokemonName) {
     const data = await response.json();
     return data
   } catch (error) {
-    console.error(`for real? man your dumb`)
+    console.error(`error in fetchSpecificPokemon`)
   }
 }

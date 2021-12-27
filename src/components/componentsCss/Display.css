@@ -20,7 +20,8 @@ span {
 
 .display {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  row-gap: 25px;
   background-image: linear-gradient(
     to top left,
     rgba(60, 39, 246, 0.842),
@@ -37,13 +38,61 @@ span {
   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.info {
+.specs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.stats {
   display: flex;
   flex-direction: column;
+}
+
+.info {
+  display: flex;
   justify-content: center;
 }
 
 .sprite {
   display: flex;
   align-items: center;
+}
+
+.display-no-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    to top left,
+    rgba(60, 39, 246, 0.842),
+    rgba(27, 151, 209, 0.883),
+    rgb(79, 206, 223),
+    rgba(0, 255, 255, 0.883)
+  );
+  color: rgb(0, 0, 0);
+  font-family: 'Press Start 2P', cursive;
+  height: 90%;
+  width: 95%;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.display-no-data > h4 {
+  margin-top: 50px;
+}
+
+.no-data-img {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.no-data {
+  text-align: center;
+  margin-left: 10px;
+}
+
+.shocked-CHU {
+  height: 100px;
 }

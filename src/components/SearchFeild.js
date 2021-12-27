@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { fetchSpecificPokemon } from './api/api';
 import './componentsCss/SearchFeild.css';
+import './componentsCss/Buttons.css'
 
 
 
@@ -13,7 +14,7 @@ function SearchFeild({ setPokemon }) {
       if (searchedPokemon.id > 0 && searchedPokemon.id < 152) {
         setPokemon(searchedPokemon)
       } else {
-        setPokemon(<h1>NOPE!</h1>)
+        setPokemon([])
       }
       setSearchPoke('')
     }}>
@@ -22,7 +23,11 @@ function SearchFeild({ setPokemon }) {
         value={searchPoke}
         onChange={e => setSearchPoke(e.target.value)}
       />
-      <button className='search-button'>Search</button>
+      <div className="button-shoulder-right">
+        <div className="button-depth-right">
+          <button className='search-button'>Search</button>
+        </div>
+      </div>
     </form>
   )
 }

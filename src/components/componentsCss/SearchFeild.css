@@ -3,9 +3,27 @@
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
   background-color: #29aafd;
   border-radius: 15px;
-  border: 2px solid black;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.712);
+  box-shadow: 1px 1px 10px black;
   height: 40px;
   width: 100px;
-  margin-left: 10px;
+}
+
+#search {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: #b90000;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#search > input {
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#search > input:active {
+  border: 1px solid black;
 }
