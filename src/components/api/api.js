@@ -10,7 +10,7 @@ export async function fetchFirstPokemon() {
 
     return data;
   } catch (error) {
-    console.error(error, 'error in fetchAllPokemon')
+    console.error(error, 'error happed in fetchAllPokemon')
   }
 }
 

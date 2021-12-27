@@ -10,12 +10,13 @@ function SearchFeild({ setPokemon }) {
   return (
     <form id='search' onSubmit={async (e) => {
       e.preventDefault();
-      const searchedPokemon = await fetchSpecificPokemon(searchPoke.toLowerCase());
-      if (searchedPokemon.id > 0 && searchedPokemon.id < 152) {
+      try {
+        const searchedPokemon = await fetchSpecificPokemon(searchPoke.toLowerCase());
         setPokemon(searchedPokemon)
-      } else {
-        setPokemon([])
+      } catch (error) {
+        console.error(error, `searchedPokemon doesn't exist`)
       }
+
       setSearchPoke('')
     }}>
       <input type='text'

@@ -6,18 +6,30 @@ import './componentsCss/PokemonType.css'
 const capitalizeFirstLetter = word => word.replace(/^\w/g, capLetter => capLetter.toUpperCase());
 
 function Display({ name, id, sprites, types, stats }) {
-
-  return (
-    !id ?
+  if (!id) {
+    return (
+      <div className="display-no-pokemon">
+        <h4>This pokemon doesn't exist!</h4>
+        <h4>Please try searching again</h4>
+      </div>
+    )
+  } else if (id < 1 || id > 151) {
+    return (
       <div className="display-no-data">
-        <h4 className='no-data'>Only contains data <br /> for the first <br /> 151 Pokemon!!</h4>
+        <div className='text'>
+          <h4 className="no-data">Only contains data</h4>
+          <h4 className="no-data">for the first</h4>
+          <h4 className="no-data">151 Pokemon</h4>
+        </div>
         <div className="no-data-img">
           <img className='shocked-CHU' src="https://image.emojipng.com/561/1389561.png" alt="shocked pikachu" />
           <img className='shocked-CHU' src="https://image.emojipng.com/561/1389561.png" alt="shocked pikachu" />
           <img className='shocked-CHU' src="https://image.emojipng.com/561/1389561.png" alt="shocked pikachu" />
         </div>
       </div>
-      :
+    )
+  } else {
+    return (
       <div className='display'>
         <div className="specs">
           <div className="sprite">
@@ -47,7 +59,8 @@ function Display({ name, id, sprites, types, stats }) {
           <span>Name: <span>{capitalizeFirstLetter(name)}</span></span>
         </div>
       </div>
-  )
+    )
+  }
 }
 
 export default Display
