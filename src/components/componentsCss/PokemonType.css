@@ -1,0 +1,169 @@
+.grass {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 4px 20px;
+  background-color: rgb(32, 87, 27);
+  color: #58ee4b;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.poison {
+  color: rgb(234, 113, 250);
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  background-color: purple;
+  border-radius: 15px;
+  padding: 4px 20px;
+  border: 1px solid black;
+}
+
+.fire {
+  color: rgb(255, 157, 111);
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  background-color: #f97856;
+  border-radius: 15px;
+  padding: 4px 20px;
+  border: 1px solid black;
+}
+
+.flying {
+  color: #afbaf8;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  background-color: #818cc8;
+  border-radius: 15px;
+  padding: 4px 20px;
+  border: 1px solid black;
+}
+
+.water {
+  color: #4fc8db;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  background-color: #4fc8db;
+  border-radius: 15px;
+  padding: 4px 20px;
+  border: 1px solid black;
+}
+
+.bug {
+  color: #98ab41;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  background-color: #98ab41;
+  border-radius: 15px;
+  padding: 4px 20px;
+  border: 1px solid black;
+}
+
+.normal {
+  color: #b5956e;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  background-color: #b5956e;
+  border-radius: 15px;
+  padding: 4px 20px;
+  border: 1px solid black;
+}
+
+.electric {
+  color: #fac508;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  background-color: #fac508;
+  border-radius: 15px;
+  padding: 4px 20px;
+  border: 1px solid black;
+}
+
+.ground {
+  color: #e7b367;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  background-color: #e7b367;
+  border-radius: 15px;
+  padding: 4px 20px;
+  border: 1px solid black;
+}
+
+.fairy {
+  color: #fe77ab;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  background-color: #fe77ab;
+  border-radius: 15px;
+  padding: 4px 20px;
+  border: 1px solid black;
+}
+
+.fighting {
+  color: #fb6661;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  background-color: #fb6661;
+  border-radius: 15px;
+  padding: 4px 20px;
+  border: 1px solid black;
+}
+
+.psychic {
+  color: #f65f85;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  background-color: #f65f85;
+  border-radius: 15px;
+  padding: 4px 20px;
+  border: 1px solid black;
+}
+
+.rock {
+  color: #aa9f63;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  background-color: #aa9f63;
+  border-radius: 15px;
+  padding: 4px 20px;
+  border: 1px solid black;
+}
+
+.steel {
+  color: #8cb4be;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  background-color: #8cb4be;
+  border-radius: 15px;
+  padding: 4px 20px;
+  border: 1px solid black;
+}
+
+.ice {
+  color: #6cddd2;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  background-color: #6cddd2;
+  border-radius: 15px;
+  padding: 4px 20px;
+  border: 1px solid black;
+}
+
+.ghost {
+  color: #826f97;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  background-color: #826f97;
+  border-radius: 15px;
+  padding: 4px 20px;
+  border: 1px solid black;
+}
+
+.dragon {
+  color: #5a63b0;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+    1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  background-color: #5a63b0;
+  border-radius: 15px;
+  padding: 4px 20px;
+  border: 1px solid black;
+}

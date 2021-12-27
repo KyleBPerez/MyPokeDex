@@ -1,0 +1,35 @@
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: #b90000;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.next-poke {
+  color: white;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  background-color: #29aafd;
+  border-radius: 15px;
+  border: 2px solid black;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.712);
+  height: 40px;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.last-poke {
+  color: white;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  background-color: #29aafd;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.733);
+  height: 40px;
+  width: 100px;
+  margin-left: 10px;
+}

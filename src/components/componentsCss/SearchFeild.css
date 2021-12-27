@@ -1,0 +1,11 @@
+.search-button {
+  color: white;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  background-color: #29aafd;
+  border-radius: 15px;
+  border: 2px solid black;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.712);
+  height: 40px;
+  width: 100px;
+  margin-left: 10px;
+}
